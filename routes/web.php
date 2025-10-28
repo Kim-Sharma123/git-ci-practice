@@ -19,3 +19,7 @@ Route::get('/todo-list', function() {
 Route::get('/product-list', function() {
     return view('product-list');
 })->name('product-list');
+
+Route::get('/', function() {
+    return view('welcome');
+});
