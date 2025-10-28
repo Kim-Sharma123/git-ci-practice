@@ -1,6 +1,6 @@
 <div style="max-width: 500px; margin: auto; text-align: center;">
     <h2>Contact Us</h2>
-
+    <h2>Contact Us</h2>
     @if($successMessage)
         <div style="color: green; margin-bottom: 15px;">
             {{ $successMessage }}
