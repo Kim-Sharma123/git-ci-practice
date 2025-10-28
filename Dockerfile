@@ -9,4 +9,5 @@ RUN php artisan key:generate --force || true
 RUN php artisan config:clear && php artisan config:cache && php artisan route:cache && php artisan view:cache
 RUN chown -R www-data:www-data storage bootstrap/cache
 EXPOSE 8080
+CMD tail -f storage/logs/laravel.log
 CMD php -S 0.0.0.0:8080 -t public
